@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+<main>
+  <section class="illustration">
+     <picture class="illustration__img">
+        <!-- Desktop -->
+        <source
+          media="(min-width: 1440px)"
+          srcset="/assets/images/illustration-sign-up-desktop.svg" />
+        <!-- Tablet -->
+        <source
+          media="(min-width: 768px)"
+          srcset="/assets/images/illustration-sign-up-tablet.svg" />
+        <!-- Mobile fallback -->
+        <img
+          src="/assets/images/illustration-sign-up-mobile.svg"
+          alt="illustration" />             
+    </picture>
+    
+  </section>
+
+  <section class="content">
+     <h1 class="content__heading">Stay updated!</h1>
+    <p class="content__blurb">Join 60,000+ product managers receiving monthly updates on:</p>
+    <ul class="content__list">
+      <li class="content-list__item"><span class="content-list__icon"><img src="assets/images/icon-list.svg"></span><span>Product discovery and building what matters</span></li>
+      <li class="content-list__item"><span class="content-list__icon"><img src="assets/images/icon-list.svg"></span><span>Measuring to ensure updates are a success</span></li>
+      <li class="content-list__item"><span class="content-list__icon"><img src="assets/images/icon-list.svg"></span><span>And much more!</span></li>
+    </ul>
+
+
+    <form id="form__signup" novalidate>
+       <div class="form__content">
+
+          <div class="form__message">
+            <p class="form__email">Email address</p>
+            <p class="form__field-message">Valid email required</p>
+          </div>
+
+          <input class="form__email-field" name="email" type="email" id="email" required placeholder="email@company.com">
+          <button class="form_primary-btn" type="submit">Subscribe to monthly newsletter</button>
+        </div>
+     </form>
+  </section>
+  </main>      
+
+  <dialog id="subscribe-success">
+      <!-- Success message start -->
+      <section class="success-message">
+        <p class="success__icon"><img src="assets/images/icon-list.svg"></p>
+        <h1 class="success__heading">Thanks for subscribing!</h1>
+        <p class="success__paragraph">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>.
+      Please open it and click the button inside to confirm your subscription.</p>
+      <button class="success__btn" id="close-dialog">Dismiss message</button>
+      </section>
+      <!-- Success message end -->
+    </dialog>
+  
+  <script src="script.js"></script>
+</body>                            
+</html>
