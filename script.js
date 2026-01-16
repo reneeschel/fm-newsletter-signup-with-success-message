@@ -33,10 +33,6 @@ form.addEventListener('submit', (e) => {
     
        
   });
-
-  dialog.addEventListener('close', () => {
-
-});
     
 
 function isValidEmail(email) {

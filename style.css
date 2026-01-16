@@ -220,6 +220,7 @@ input {
   background-color: var(--clr-blue-800);
   color: var(--clr-white);
   font-weight: 700;
+  cursor: pointer;
 }
 
 .form_primary-btn:active {
@@ -233,7 +234,7 @@ input {
 dialog {
   position: absolute;
   align-items: center;
-  min-width: 375px;
+  max-width: 375px;
   margin: 0 auto;
   padding: 0;
 }
@@ -270,6 +271,7 @@ dialog::backdrop {
   color: var(--clr-white);
   padding: 1rem 5rem;
   font-weight: 700;
+  cursor:pointer;
 }
 
 
@@ -338,10 +340,6 @@ dialog::backdrop {
     grid-row: 1;
     padding-block: 5.5rem;
  
-  }
-
-  .content__blurb {
-    margin-block-start: 5px;
   }
 
   #form__signup {
